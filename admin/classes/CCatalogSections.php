@@ -2,7 +2,7 @@
     require_once($_SERVER["DOCUMENT_ROOT"].'/admin/classes/CDataBase.php');
     class CCatalogSections
     {
-        public function GetMenuSections($arFilter, $SelectFields)
+        static public function GetMenuSections($arFilter, $SelectFields)
         {
             $query = "";
             if(is_array($SelectFields) && count($SelectFields) == 1 && $SelectFields[0] == "*")
@@ -58,7 +58,7 @@
                 return false;
         }
 
-        public function GetByID($id)
+        static public function GetByID($id)
         {
             $query = "";
             $query .= "SELECT * FROM `categories` WHERE `id` = ".intval($id);

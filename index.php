@@ -27,7 +27,6 @@
 	session_start();
 
 //3. Секция представления (вывод данных на экран)
-	require_once("modules/add_user.php");
+	require_once("modules/add_user.php"); // тестовый коммент для гит
 	require_once("templates/shablon.html");
-
 ?>

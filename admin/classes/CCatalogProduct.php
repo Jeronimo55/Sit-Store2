@@ -2,7 +2,7 @@
 	require_once($_SERVER["DOCUMENT_ROOT"].'/admin/classes/CDataBase.php');
 	class CCatalogProduct
 	{
-		public function GetCatalogTop($limit=12)
+		static public function GetCatalogTop($limit=12)
 		{
 			$query = "";
 			$query .= "SELECT * FROM `products` WHERE `catalog_top` = 'Y' ORDER BY RAND() LIMIT ".intval($limit);
@@ -25,7 +25,7 @@
 				return false;
 		}
 		
-		public function GetList($arFilter, $SelectFields)
+		static public function GetList($arFilter, $SelectFields)
 		{
 			$query = "";
 			if(is_array($SelectFields) && count($SelectFields)==1 && $SelectFields[0] == "*")
@@ -81,7 +81,7 @@
 				return false;
 		}
 		
-		public function GetByID($id)
+		static public function GetByID($id)
 		{
 			$query = "";
 			$query .= "SELECT * FROM `products` WHERE `id` = ".intval($id);
