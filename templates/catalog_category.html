@@ -1,0 +1,48 @@
+<?
+	if(!isset($_REQUEST["category_id"]))
+		die("Товары данной категории не найдены!");
+		
+	else
+	{
+		require_once($_SERVER["DOCUMENT_ROOT"].'/admin/classes/CCatalogProduct.php');
+		require_once($_SERVER["DOCUMENT_ROOT"].'/admin/classes/CCatalogSections.php');
+		require_once($_SERVER["DOCUMENT_ROOT"].'/functions.php');
+		
+		$arResult = Array();
+		$arResult["ITEMS"] = CCatalogProduct::GetList(Array("active"=>"Y", "category_id"=>intval($_REQUEST["category_id"])), Array("*"));
+		$arResult["CATEGORY"] = CCatalogSections::GetByID(intval($_REQUEST["category_id"]));
+	}
+?>
+<div id="feature-content">
+  <section>
+	<h2><?=$arResult["CATEGORY"]["name"]?></h2>
+  </section>
+<?if(count($arResult["ITEMS"])>0):?>
+	<div class="row">
+		<div class="12u">
+			<div class="row">
+				<?$cell = 1?>
+				<?foreach($arResult["ITEMS"] as $arItem):?>
+					<div class="3u">
+					  <section>
+						<div>
+						  <div class="image-style1" style="height:200px"><a href="/?file=catalog_detail&product_id=<?=$arItem["id"]?>"><img src="/<?=$arItem["image"]?>" alt="<?=$arItem["name"]?>" style="width: auto; max-width: 265px; max-height:200px; margin: 0 auto;"></a></div>
+						  <div><a href="/?file=catalog_detail&product_id=<?=$arItem["id"]?>"><img src="css/images/img02.png" width="262" height="30" alt=""></a></div>
+						</div>
+						<p style="text-align: center;"><?=$arItem["name"]?></p>
+						<p class="button"><a href="/?file=catalog_detail&product_id=<?=$arItem["id"]?>">Подробнее...</a></p>
+					  </section>
+					</div>
+					<?if($cell%4 == 0 && $cell !== 0):?>
+						</div>
+						<div class="row">
+					<?endif?>
+					<?$cell++?>
+				<?endforeach?>
+			</div>
+		</div>
+	</div>
+<?else:?>
+	<p>Товары данной категории не найдены!</p>
+<?endif?>
+</div>

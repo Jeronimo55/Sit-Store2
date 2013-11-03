@@ -1,0 +1,25 @@
+<?require_once($_SERVER["DOCUMENT_ROOT"].'/admin/classes/CCatalogProduct.php');?>
+<?$arResult = CCatalogProduct::GetCatalogTop(4)?>
+<div id="feature-content">
+  <section>
+	<h2>Топ товаров</h2>
+  </section>
+  <div class="row">
+	<div class="12u">
+	  <div class="row">
+		<?foreach($arResult as $arItem):?>
+			<div class="3u">
+			  <section>
+				<div>
+				  <div class="image-style1"><a href="/?file=catalog_detail&product_id=<?=$arItem["id"]?>"><img src="/<?=$arItem["image"]?>" alt="<?=$arItem["name"]?>" style="width: auto; height: 200px; margin: 0 auto;"></a></div>
+				  <div><a href="/?file=catalog_detail&product_id=<?=$arItem["id"]?>"><img src="css/images/img02.png" width="262" height="30" alt=""></a></div>
+				</div>
+				<p style="text-align: center;"><?=$arItem["name"]?></p>
+				<p class="button"><a href="#">Подробнее...</a></p>
+			  </section>
+			</div>
+		<?endforeach?>
+	  </div>
+	</div>
+  </div>
+</div>

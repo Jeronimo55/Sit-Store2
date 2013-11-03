@@ -1,0 +1,40 @@
+<?
+	if(!isset($_REQUEST["product_id"]))
+		die("Товар не найден!");
+	else
+	{
+		require_once($_SERVER["DOCUMENT_ROOT"].'/admin/classes/CCatalogProduct.php');
+		require_once($_SERVER["DOCUMENT_ROOT"].'/admin/classes/CCatalogSections.php');
+		require_once($_SERVER["DOCUMENT_ROOT"].'/functions.php');
+		
+		$arResult = Array();
+		$arResult = CCatalogProduct::GetByID(intval($_REQUEST["product_id"]));
+		$arResult["CATEGORY"] = CCatalogSections::GetByID(intval($arResult["category_id"]));
+	}
+?>
+<?if(count($arResult)>0):?>
+	<div class="5grid-layout 5grid">
+		<div id="page">
+			<div class="row">
+				<div class="12u">
+					<section id="content">
+						<h2><?=$arResult["name"]?></h2>
+						<p class="subtitle"><?=$arResult["CATEGORY"]["name"]?></p>
+						<div class="alignleft">
+							<div class="image-style1"><img src="<?=$arResult["image"]?>" alt=""></a></div>
+							<div><img src="css/images/img02.png" width="262" height="30" alt=""></div>
+						</div>
+						<?=$arResult["description"]?>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="12u">
+				<div class="row">
+					<p class="button"><a href="#">Купить</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+<?endif?>
