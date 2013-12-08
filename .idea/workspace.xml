@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="62cabc27-6889-485e-8afd-639a7bb86bb1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/classes/CCatalogProduct.php" afterPath="$PROJECT_DIR$/admin/classes/CCatalogProduct.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/classes/CDataBase.php" afterPath="$PROJECT_DIR$/admin/classes/CDataBase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/catalog_detail.html" afterPath="$PROJECT_DIR$/templates/catalog_detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+    <list default="true" id="62cabc27-6889-485e-8afd-639a7bb86bb1" name="Default" comment="upload">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="www.iws" />
@@ -41,7 +37,7 @@
       <file leaf-file-name="CCatalogProduct.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/classes/CCatalogProduct.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="217" column="37" selection-start="6627" selection-end="6709" vertical-scroll-proportion="-0.09" vertical-offset="4014" max-vertical-offset="5706">
+            <state line="122" column="29" selection-start="3174" selection-end="3350" vertical-scroll-proportion="0.6975" vertical-offset="1674" max-vertical-offset="5706">
               <folding />
             </state>
           </provider>
@@ -50,7 +46,7 @@
       <file leaf-file-name="CDataBase.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/classes/CDataBase.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="10" selection-start="2385" selection-end="2385" vertical-scroll-proportion="-19.62963" vertical-offset="910" max-vertical-offset="1710">
+            <state line="74" column="52" selection-start="2050" selection-end="2160" vertical-scroll-proportion="-15.62963" vertical-offset="910" max-vertical-offset="1710">
               <folding />
             </state>
           </provider>
@@ -84,8 +80,8 @@
         <option value="$PROJECT_DIR$/admin/classes/CCatalogSections.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/templates/catalog_detail.html" />
-        <option value="$PROJECT_DIR$/admin/classes/CCatalogProduct.php" />
         <option value="$PROJECT_DIR$/admin/classes/CDataBase.php" />
+        <option value="$PROJECT_DIR$/admin/classes/CCatalogProduct.php" />
       </list>
     </option>
   </component>
@@ -509,7 +505,11 @@
       <created>1383501399516</created>
       <updated>1383501399516</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="upload">
+      <created>1386508416504</created>
+      <updated>1386508416504</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -523,7 +523,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.60023445" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28119937" sideWeight="0.6717468" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28119937" sideWeight="0.6717468" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39976552" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -659,14 +659,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/classes/CDataBase.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="10" selection-start="2385" selection-end="2385" vertical-scroll-proportion="-19.62963" vertical-offset="910" max-vertical-offset="1710">
+        <state line="74" column="52" selection-start="2050" selection-end="2160" vertical-scroll-proportion="-15.62963" vertical-offset="910" max-vertical-offset="1710">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/classes/CCatalogProduct.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="217" column="37" selection-start="6627" selection-end="6709" vertical-scroll-proportion="-0.09" vertical-offset="4014" max-vertical-offset="5706">
+        <state line="122" column="29" selection-start="3174" selection-end="3350" vertical-scroll-proportion="0.6975" vertical-offset="1674" max-vertical-offset="5706">
           <folding />
         </state>
       </provider>
