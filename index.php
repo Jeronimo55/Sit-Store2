@@ -5,6 +5,17 @@
 	
 	require_once("functions.php");						//подключить файл с функциями
 	require_once($_SERVER["DOCUMENT_ROOT"].'/admin/classes/CCatalogSections.php');
+	require_once($_SERVER["DOCUMENT_ROOT"].'/admin/classes/CCatalogProduct.php');
+
+    $arFields = Array(
+        "name" => "Блинница Ariete Baby 181",
+        "quantity" => "10",
+        "price" => "60.00",
+        "category_id" => "1",
+        "catalog_top" => "Y",
+    );
+
+    CCatalogProduct::Update(1, $arFields);
 
 //1. Секция данных (переменные и массивы)			=================================================================
 	$file = $_GET['file'];

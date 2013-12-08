@@ -13,6 +13,10 @@
 	}
 ?>
 <?if(count($arResult)>0):?>
+    <?
+        $arResult = $arResult[0];
+        unset($arResult[0]);
+    ?>
 	<div class="5grid-layout 5grid">
 		<div id="page">
 			<div class="row">
